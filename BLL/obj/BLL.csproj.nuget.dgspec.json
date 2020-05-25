@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj": {}
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj": {
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj",
+        "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj",
+        "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\obj\\",
+        "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\BLL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,15 +21,22 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
-            "projectReferences": {}
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj": {
+                "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj"
+              },
+              "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -39,13 +46,78 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netcoreapp3.0": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
+        "projectName": "DAL",
+        "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {
+              "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+                "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Proxies": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -58,6 +130,72 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }

@@ -1,9 +1,10 @@
 using System;
+using Microsoft.AspNetCore.Identity;
 
 namespace Domain
 {
-    public class AppUser
+    public class AppUser:IdentityUser
     {
-        public Guid Id { get; set; }
+        public string DisplayName { get; set; }
     }
 }

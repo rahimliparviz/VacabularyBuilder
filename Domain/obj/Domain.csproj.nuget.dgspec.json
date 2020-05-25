@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {}
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\obj\\",
+        "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -21,14 +21,14 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netstandard2.0"
+          "netcoreapp3.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netstandard2.0": {
+          "netcoreapp3.0": {
             "projectReferences": {}
           }
         },
@@ -39,13 +39,11 @@
         }
       },
       "frameworks": {
-        "netstandard2.0": {
+        "netcoreapp3.0": {
           "dependencies": {
-            "NETStandard.Library": {
-              "suppressParent": "All",
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[2.0.3, )",
-              "autoReferenced": true
+              "version": "[3.0.0, )"
             }
           },
           "imports": [
@@ -58,6 +56,11 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
