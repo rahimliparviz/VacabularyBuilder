@@ -1,0 +1,11 @@
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\bin\Debug\netcoreapp3.0\DAL.deps.json
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\bin\Debug\netcoreapp3.0\DAL.dll
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\bin\Debug\netcoreapp3.0\DAL.pdb
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\bin\Debug\netcoreapp3.0\Domain.dll
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\bin\Debug\netcoreapp3.0\Domain.pdb
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.csprojAssemblyReference.cache
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.AssemblyInfo.cs
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.csproj.CopyComplete
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.dll
+C:\Users\user\Desktop\projects\VacabularyBuilder\DAL\obj\Debug\netcoreapp3.0\DAL.pdb

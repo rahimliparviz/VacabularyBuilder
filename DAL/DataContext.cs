@@ -16,7 +16,7 @@ namespace DAL
         public DbSet<UserWord> UserWords{ get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder){
-            
+            base.OnModelCreating(builder);
         }
     }
 }

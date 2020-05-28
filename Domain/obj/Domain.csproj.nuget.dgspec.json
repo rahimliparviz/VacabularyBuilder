@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {}
+    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+    "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

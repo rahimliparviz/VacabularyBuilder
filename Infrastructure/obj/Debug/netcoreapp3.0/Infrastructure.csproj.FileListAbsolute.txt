@@ -1,0 +1,7 @@
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\bin\Debug\netcoreapp3.0\Infrastructure.deps.json
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\bin\Debug\netcoreapp3.0\Infrastructure.dll
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\bin\Debug\netcoreapp3.0\Infrastructure.pdb
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\obj\Debug\netcoreapp3.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\obj\Debug\netcoreapp3.0\Infrastructure.AssemblyInfo.cs
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\obj\Debug\netcoreapp3.0\Infrastructure.dll
+C:\Users\user\Desktop\projects\VacabularyBuilder\Infrastructure\obj\Debug\netcoreapp3.0\Infrastructure.pdb

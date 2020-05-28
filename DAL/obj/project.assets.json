@@ -6072,11 +6072,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6095,8 +6095,8 @@
       "frameworks": {
         "netcoreapp3.0": {
           "projectReferences": {
-            "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj"
+            "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\user\\Desktop\\projects\\VacabularyBuilder\\Domain\\Domain.csproj"
             }
           }
         }
