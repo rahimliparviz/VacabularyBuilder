@@ -1,6 +1,8 @@
 using System;
+using System.Net;
 using System.Threading;
 using System.Threading.Tasks;
+using BLL.Errors;
 using DAL;
 using MediatR;
 
@@ -25,10 +27,10 @@ namespace BLL.Words
                 
                 var word = await _context.Words.FindAsync(request.Id);
 
-                // if (activity == null)
-                // {
-                //     throw new RestException(HttpStatusCode.NotFound, new { Activity = "Not found" });
-                // }
+                if (word == null)
+                {
+                    throw new CustomException(HttpStatusCode.NotFound, new { Activity = "Not found" });
+                }
 
                 word.Phrase = request.Phrase ?? word.Phrase;
            

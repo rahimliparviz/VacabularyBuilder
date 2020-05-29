@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using DAL;
 using MediatR;
 using Domain;
+using FluentValidation;
 
 namespace BLL.Words
 {
@@ -14,6 +15,14 @@ namespace BLL.Words
          public string Phrase { get; set; }
          public string Translation { get; set; }
      }  
+
+    public class CommandValidator:AbstractValidator<Command>{
+        public CommandValidator()
+        {
+            RuleFor(x=>x.Phrase).NotEmpty();
+            RuleFor(x=>x.Translation).NotEmpty();
+        }
+    }
 
      public class Handler : IRequestHandler<Command>
         {
