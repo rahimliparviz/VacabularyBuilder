@@ -10,7 +10,7 @@ namespace BLL.Words
 {
     public class Create
     {
-     public class Command :IRequest{
+     public class Command : IRequest{
          public Guid Id { get; set; }
          public string Phrase { get; set; }
          public string Translation { get; set; }

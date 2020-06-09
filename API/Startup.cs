@@ -27,6 +27,21 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(opt => 
+            {
+                opt.AddPolicy("CorsPolicy", policy => 
+                {
+                    policy
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .WithOrigins("http://localhost:3000")
+                    .AllowCredentials();
+                    // .WithExposedHeaders("WWW-Authenticate");
+                    //sonuncy ""WWW-Authenticate" elave etmekde meqsed
+                    //token exipire olanda client headerde bu barede melumat
+                    //gondermesi ucundu
+                });
+            });
             services.AddMediatR(typeof(List.Handler).Assembly);
             services.AddAutoMapper(typeof(List.Handler).Assembly);
 
@@ -62,6 +77,9 @@ namespace API
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors("CorsPolicy");
+
 
             // app.UseAuthentication();
 

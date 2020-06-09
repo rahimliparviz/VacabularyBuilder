@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
-    public class WordController:BaseController
+    public class WordsController:BaseController
     {
 
         [HttpGet]
