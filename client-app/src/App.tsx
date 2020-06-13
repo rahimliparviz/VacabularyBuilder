@@ -12,6 +12,7 @@ import {
 import {observer} from 'mobx-react-lite';
 import WordList from './components/admin/words/WordList';
 import ModalContainer from './components/modals/ModalContainer';
+import WordsAddEditDelete from './components/admin/words/WordsAddEditDelete';
 
 
 const App: React.FC<RouteComponentProps> = ({ location }) => {
@@ -23,7 +24,7 @@ const App: React.FC<RouteComponentProps> = ({ location }) => {
           <Container style={{ marginTop: '7em' }}>
           <Switch>
             <Route exact path='/add-word'  component={AddWords} />
-            <Route exact path='/all-words'  component={WordList} />
+            <Route exact path='/all-words'  component={WordsAddEditDelete} />
           </Switch>
           </Container>
       </Fragment>

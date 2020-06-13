@@ -1,5 +1,12 @@
 export interface ITranslate{
-    id:string,
+    id?:string,
     locale:string
     translation :string
+}
+
+export class Translate implements ITranslate{
+    id?: string | undefined;
+    locale: string ='';
+    translation: string = '';
+
 }

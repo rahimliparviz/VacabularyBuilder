@@ -2,12 +2,13 @@ import * as React from 'react';
 import { IWord } from '../../../models/IWord';
 import {  Button, Table } from 'semantic-ui-react';
 import { useContext } from 'react';
-import AddEditWordFormProps from './forms/AddEditWordForm';
+import AddEditWordForm from './forms/AddEditWordForm';
 import { RootStoreContext } from '../../../stores/rootStore';
+import { observer } from 'mobx-react-lite';
 
 export interface WordItemProps {
     word:IWord,
-    deleteWord:(id:string)=>void;
+    deleteWord:(id:string )=>void;
     openModal:(content:any)=>void;
 }
  
@@ -16,9 +17,10 @@ const WordItem: React.SFC<WordItemProps> = ({deleteWord,word,openModal}) => {
   const rootStore = useContext(RootStoreContext);
   const wordStore = rootStore.wordStore;
 
-  const { selectWord } = wordStore;
+  const { selectWord,setEditMode } = wordStore;
 
     const  selectWordForEdit =(component,id)=>{
+      setEditMode(true);
       selectWord(id);
       openModal(component);
     }
@@ -31,7 +33,7 @@ const WordItem: React.SFC<WordItemProps> = ({deleteWord,word,openModal}) => {
       ))}
       <Table.Cell >
       <Button.Group>
-        <Button positive onClick={()=>selectWordForEdit(<AddEditWordFormProps/>,word.id)}>Edit</Button>
+        <Button positive onClick={()=>selectWordForEdit(<AddEditWordForm/>,word.id)}>Edit</Button>
         <Button negative onClick={()=>deleteWord(word.id)}>Delete</Button>
       </Button.Group>
       </Table.Cell>
@@ -39,4 +41,4 @@ const WordItem: React.SFC<WordItemProps> = ({deleteWord,word,openModal}) => {
      );
 }
  
-export default WordItem;
+export default observer(WordItem);

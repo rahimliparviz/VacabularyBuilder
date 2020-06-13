@@ -23,7 +23,7 @@ const Words = {
     list : ():Promise<IWord[]> => requests.get('/words'),
     delete:(id:string)=>requests.del(`words/${id}`),
     update:(word:IWord)=>requests.put(`words/${word.id}`,word),
-    // create:
+    create: (word: IWord) => requests.post('/words', word),
 }
 
 export default {

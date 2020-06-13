@@ -5,6 +5,8 @@ using DAL;
 using MediatR;
 using Domain;
 using FluentValidation;
+using System.Collections.Generic;
+using BLL.DTO;
 
 namespace BLL.Words
 {
@@ -13,14 +15,15 @@ namespace BLL.Words
      public class Command : IRequest{
          public Guid Id { get; set; }
          public string Phrase { get; set; }
-         public string Translation { get; set; }
+        public  ICollection<TranslateDto> Translates{ get; set; }
+
      }  
 
     public class CommandValidator:AbstractValidator<Command>{
         public CommandValidator()
         {
             RuleFor(x=>x.Phrase).NotEmpty();
-            RuleFor(x=>x.Translation).NotEmpty();
+            RuleFor(x=>x.Translates).NotEmpty();
         }
     }
 
@@ -41,14 +44,26 @@ namespace BLL.Words
 
                 _context.Words.Add(word);
 
-
+                foreach (var tr in request.Translates)
+                {
                 var translation = new Translate{
-                    Locale= "az",
-                    Translation=request.Translation,
+                    Id = tr.Id,
+                    Locale= tr.Locale,
+                    Translation=tr.Translation,
                     Word=word
                 };
                 
-                _context.Translates.Add(translation);
+                    _context.Translates.Add(translation);
+                }
+
+
+                // var translation = new Translate{
+                //     Locale= "az",
+                //     Translation=request.Translation,
+                //     Word=word
+                // };
+                
+                // _context.Translates.Add(translation);
 
 
                 var success = await _context.SaveChangesAsync() > 0;

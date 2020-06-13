@@ -1,4 +1,3 @@
-import { AddEditWordFormProps } from './../components/admin/words/forms/AddEditWordForm';
 import { IWord } from './../models/IWord';
 import { RootStore } from "./rootStore";
 import { observable, action, runInAction, computed } from "mobx";
@@ -15,14 +14,24 @@ export default class WordStore {
     // @observable words : IWord[] = [];
     @observable wordsRegistry = new Map();
     @observable selectedWord:IWord|null = null;
+    @observable editMode:boolean = false;
+
     // @observable wordsRegistry = new Map();
 
     @computed get words() {
-        console.log(Array.from(this.wordsRegistry.values()))
         // return this.words(
           return Array.from(this.wordsRegistry.values())
         // );
       }
+
+    @action setEditMode = (mode:boolean) => {
+        
+        this.editMode = mode;
+
+        if(!mode){
+            this.selectedWord = null;
+        }
+    }
 
 
     @action loadWords = async() => {
@@ -45,7 +54,10 @@ export default class WordStore {
     @action deleteWord = async(id:string) => {
 
         try {
-            await agent.Words.delete(id);        
+            await agent.Words.delete(id);      
+            runInAction(()=>{
+                this.wordsRegistry.delete(id);
+            })  
         } catch (error) {
             console.log(error);
         }
@@ -56,7 +68,7 @@ export default class WordStore {
 
         try {
             await agent.Words.update(word);
-            runInAction('editing activity', () => {
+            runInAction('editing word', () => {
               this.wordsRegistry.set(word.id, word);
               this.rootStore.modalStore.modal.open = false;
             //   this.activity = activity;
@@ -64,7 +76,29 @@ export default class WordStore {
             });
             // history.push(`/activities/${activity.id}`);
           } catch (error) {
-            runInAction('edit activity error', () => {
+            runInAction('edit word error', () => {
+            //   this.submitting = false;
+            });
+            // toast.error('Problem submitting data');
+            console.log(error);
+          }
+    }
+
+    @action createWord = async(word:IWord) => {
+        console.log(word);
+
+        try {
+            await agent.Words.create(word);
+            runInAction('creating word', () => {
+                // console.log(a)
+              this.wordsRegistry.set(word.id, word);
+              this.rootStore.modalStore.modal.open = false;
+            //   this.activity = activity;
+            //   this.submitting = false;
+            });
+            // history.push(`/activities/${activity.id}`);
+          } catch (error) {
+            runInAction('creating word error', () => {
             //   this.submitting = false;
             });
             // toast.error('Problem submitting data');

@@ -13,16 +13,17 @@ const Words: React.SFC<WordsProps> = () => {
   const wordStore = rootStore.wordStore;
   const modalStore = rootStore.modalStore;
 
-  const { loadWords, words,deleteWord } = wordStore;
+  const { loadWords, words ,deleteWord } = wordStore;
   const { openModal } = modalStore;
 
   useEffect(() => {
-    console.log("use effect");
+    console.log(words)
     loadWords();
   }, [loadWords]);
 
 
   return (
+
     <Table celled>
       <Table.Header>
         <Table.Row>
@@ -31,7 +32,7 @@ const Words: React.SFC<WordsProps> = () => {
           <Table.HeaderCell>Actions</Table.HeaderCell>
         </Table.Row>
       </Table.Header>
-
+    {console.log(words)}
       <Table.Body>
         {words.map((word) => (
           <WordListItem key={word.id} word={word} openModal={openModal} deleteWord={deleteWord}/>
